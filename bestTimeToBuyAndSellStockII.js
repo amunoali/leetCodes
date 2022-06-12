@@ -31,14 +31,11 @@
 // 1 <= prices.length <= 3 * 104
 // 0 <= prices[i] <= 104
 
-
-function maxProfit(prices){
+let maxProfit = function(prices){
     let maxProfit = 0
-        for (let buy = 0; buy < prices.length; buy++){
-            for (let sell = buy + 1; sell< prices.length; sell++){
-                let profit = prices[sell] - prices[buy]
-                maxProfit = Math.max(maxProfit, profit)
-        }
+    for (let i =1; i< prices.length; i++){
+        if (prices[i] > prices[i - 1])
+            maxProfit = maxProfit + prices[i] - prices[i -1]
     }
     return maxProfit
 }
