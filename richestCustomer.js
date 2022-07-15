@@ -34,11 +34,11 @@
 // 1 <= m, n <= 50
 // 1 <= accounts[i][j] <= 100
 
-var maximumWealth = function(accounts){
-let customers = []
-for (let i = 0; i <accounts.length; i++){
-    customers.push(accounts[i].reduce((acc, cur) => acc + cur))
-}
-let maxWealth = Math.max(...customers)
-return maxWealth
-}
+// var maximumWealth = function(accounts){
+// let customers = []
+// for (let i = 0; i <accounts.length; i++){
+//     customers.push(accounts[i].reduce((acc, cur) => acc + cur))
+// }
+// let maxWealth = Math.max(...customers)
+// return maxWealth
+// }
