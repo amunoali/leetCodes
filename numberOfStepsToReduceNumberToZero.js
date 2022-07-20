@@ -47,3 +47,4 @@ while (num >0){
 }
 return steps
 }
+
