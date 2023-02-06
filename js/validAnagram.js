@@ -27,5 +27,6 @@
     
 };
 
+
 console.log(isAnagram(s = "anagram", t = "nagaram"), true)
 console.log(isAnagram(s = "rat", t = "car"), false)
